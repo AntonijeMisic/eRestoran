@@ -1,0 +1,33 @@
+<h2 mat-dialog-title>Dodaj objekat</h2>
+<mat-dialog-content class="mat-typography pb-0">
+
+    <div class="container">
+        <div class="opcije" [ngStyle]="{'display': !optionPressed ? 'block' : 'none'}">
+            <button mat-raised-button color="primary" (click)="changeState(1)" cdkFocusInitial>Dodaj sto</button>
+            <button mat-raised-button class="mt-2" color="primary" (click)="changeState(2)">Dodaj predmet</button>
+        </div>
+
+        <div [ngStyle]="{'display': optionPressed ? 'block' : 'none'}">
+            <p>Naziv:</p>
+            <input class="form-control" id="naziv" type="text" placeholder="Naziv"/>
+            <p>Pozicija X (u metrima):</p>
+            <input class="form-control" id="pozX" type="number" min="0" placeholder="Pozicija X"/>
+            <p>Pozicija Y (u metrima):</p>
+            <input class="form-control" id="pozY" type="number" min="0" placeholder="Pozicija Y"/>
+            <p>Širina (u metrima):</p>
+            <input class="form-control" id="sirina" type="number" min="0.5" placeholder="Širina"/>
+            <p>Dužina (u metrima):</p>
+            <input class="form-control" id="duzina" type="number" min="0.5" placeholder="Dužina"/>
+            <div [ngStyle]="{'display': stoObjekat? 'block' : 'none'}">
+                <p>Broj mesta:</p>
+                <input class="form-control" id="brojMesta" type="number" min="2" placeholder="Broj mesta"/>
+            </div>
+        </div>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="p-4">
+    <button mat-raised-button class="mt-2" color="primary" [ngStyle]="{'display': optionPressed ? 'block' : 'none'}" (click)="stoObjekat ? dodajSto() : dodajObjekat()" [mat-dialog-close]="true">Dodaj</button>
+    <button mat-raised-button class="mt-2" color="warn" [mat-dialog-close]="false">Otkaži</button>
+</mat-dialog-actions>

@@ -1,0 +1,80 @@
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+table {
+    width: 100%;
+    margin: 0;
+}
+
+table td, th {
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 16.67%;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.slikaWrap {
+    width: 100%;
+    height: 0px;
+    padding-bottom: 62.5%;
+    position: relative;
+}
+
+.slika {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slika img {
+    width: 100%;
+    height: 100%;
+}
+
+table h2 {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+}
+
+thead {
+    color: white;
+    background-color: #cf720e;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.table-responsive {
+    overflow-y: hidden;
+}
+
+.dugmici {
+    margin: 0 auto;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dugmici button {
+    min-width: initial;
+}
+
+.menuItem {
+    max-width: 400px;
+    margin: 0 auto;
+}

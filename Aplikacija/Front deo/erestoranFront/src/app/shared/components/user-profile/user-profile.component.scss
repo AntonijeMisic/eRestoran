@@ -1,0 +1,37 @@
+.card-body {
+    text-align: center;
+}
+
+.profil button {
+    width: 100%;
+    max-width: 360px;
+}
+
+.editProfil {
+    text-align: left;
+}
+
+.editProfil p {
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.editDugmici button {
+    width: 100%;
+}
+
+.ime-i-prezime, .editDugmici {
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+}
+
+.ime-i-prezime div {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .ime-i-prezime {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,60 @@
+<section>
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card mb-5" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Napravi nalog</h2>
+
+              <form [formGroup]="registerForm">
+
+                <div class="form-outline mb-4">
+                  <input type="text" formControlName="ime" placeholder="Ime" [class.error]="registerForm.controls['ime'].dirty && registerForm.hasError('required', 'ime')" id="form3Example1cg" class="form-control form-control-lg" name="ime" [(ngModel)] = "ime"/>
+                  <small class="text-danger" *ngIf="registerForm.controls['ime'].dirty && registerForm.hasError('required', 'ime')">*Ime je obavezno polje</small>
+                </div>
+                <div class="form-outline mb-4">
+                    <input type="text" formControlName="prezime" placeholder="Prezime" [class.error]="registerForm.controls['prezime'].dirty && registerForm.hasError('required', 'prezime')" id="form3Example2cg" class="form-control form-control-lg" name="prezime" [(ngModel)] = "prezime"/>
+                    <small class="text-danger" *ngIf="registerForm.controls['prezime'].dirty && registerForm.hasError('required', 'prezime')">*Prezime je obavezno polje</small>
+                  </div>
+                <div class="form-outline mb-4">
+                    <input type="text" formControlName="username" placeholder="Username" [class.error]="registerForm.controls['username'].dirty && registerForm.hasError('required', 'username')" id="form3Example5cg" class="form-control form-control-lg" name="username" [(ngModel)] = "username" />
+                    <small class="text-danger" *ngIf="registerForm.controls['username'].dirty && registerForm.hasError('required', 'username')">*Username je obavezno polje</small>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="email" formControlName="email" placeholder="Email" [class.error]="registerForm.controls['email'].dirty && registerForm.hasError('required', 'email')" id="form3Example3cg" class="form-control form-control-lg" name="email" [(ngModel)] = "email"/>
+                  <small class="text-danger" *ngIf="registerForm.controls['email'].dirty && registerForm.hasError('required', 'email')">*Email je obavezno polje</small>
+                </div>
+                <div class="form-outline mb-4">
+                    <input type="text" formControlName="telefon" placeholder="Telefon" [class.error]="registerForm.controls['telefon'].dirty && registerForm.hasError('required', 'telefon')" id="form3Example6cg" class="form-control form-control-lg" name="telefon" [(ngModel)] = "telefon"/>
+                    <small class="text-danger" *ngIf="registerForm.controls['telefon'].dirty && registerForm.hasError('required', 'telefon')">*Telefon je obavezno polje</small>
+                  </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" formControlName="password" placeholder="Lozinka" [class.error]="registerForm.controls['password'].dirty && registerForm.hasError('required', 'password')" id="form3Example4cg" class="form-control form-control-lg" name="password" [(ngModel)] = "password"/>
+                  <small class="text-danger" *ngIf="registerForm.controls['password'].dirty && registerForm.hasError('required', 'password')">*Lozinka je obavezno polje</small>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" formControlName="repPassword" placeholder="Ponovite lozinku" [class.error]="registerForm.controls['repPassword'].dirty && registerForm.hasError('required', 'repPassword')" id="form3Example4cdg" class="form-control form-control-lg" name="repPassword" [(ngModel)] = "repPassword"/>
+                  <small class="text-danger" *ngIf="registerForm.controls['repPassword'].dirty && registerForm.hasError('required', 'repPassword')">*Ponoviti lozinku je obavezno polje</small>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="button"
+                    class="btn btn-block btn-lg" (click)="onRegister()">Registrujte se</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Već imate nalog? <a href="#!" routerLink="/signup"
+                    class="fw-bold text-body"><u>Prijavite se ovde</u></a></p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

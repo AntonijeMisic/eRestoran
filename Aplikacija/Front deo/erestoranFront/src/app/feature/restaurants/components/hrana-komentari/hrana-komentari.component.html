@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Komentari</h2>
+<mat-dialog-content class="mat-typography pb-0">
+
+    <div class="container">
+        <div *ngIf="komentari.length != 0">
+            <div *ngFor="let komentar of komentari">
+                <!-- <h3 [ngStyle]="{'color': komentar.korisnik.tip == 'Admin' ? 'red' : ''}">{{komentar.korisnik.ime}} {{komentar.korisnik.prezime}}</h3> -->
+                <h3>{{komentar.korisnik.ime}} {{komentar.korisnik.prezime}}</h3>
+                <p>{{komentar.tekst}}</p>
+                <!--<p class="m-0" style="text-align: right;">{{komentar.vremePostavljanja | date: "d.M.yyyy. HH:mm:ss" }}</p>-->
+                <p class="m-0" data-toggle="tooltip" data-placement="top" style="text-align: right;" title="{{komentar.vremePostavljanja | date: 'd.M.yyyy. HH:mm:ss'}}">{{prikaziVreme(komentar.vremePostavljanja)}}</p>
+                <mat-dialog-actions [hidden]="!checkUserAdmin() && !checkCommentOwner(komentar)" align="end" class="p-0">
+                    <button mat-raised-button class="mt-2" color="primary"  [mat-dialog-close]="komentar"><i class="fa fa-edit"></i></button>
+                    <button mat-raised-button class="mt-2" color="warn" (click)="obrisiKomentar(komentar)"><i class="fa fa-trash"></i></button>
+                </mat-dialog-actions>
+                <hr>
+            </div>
+        </div>
+        <p *ngIf="komentari.length == 0">Nema komentara!</p>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="p-4">
+    <button mat-raised-button class="mt-2" color="primary" [disabled]="!currentUser" [mat-dialog-close]="true">Ostavi komentar</button>
+    <button mat-raised-button class="mt-2" color="warn" [mat-dialog-close]="false" cdkFocusInitial>Izadji</button>
+</mat-dialog-actions>

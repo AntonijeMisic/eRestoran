@@ -1,0 +1,102 @@
+<div class="container mt-4">
+    <div class="row mb-3 d-flex justify-content-center">
+        <h1>Izaberite datum rezervacije</h1>
+        <div class="col-lg-5 d-flex justify-content-between">
+            <div class="datepicker">
+                <input matInput class="form-control" [matDatepicker]="picker" [value]="datum" [min]="minDate" [max]="maxDate" disabled [(ngModel)]="datum">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            </div>
+            <mat-datepicker #picker disabled="false" [xPosition]="xPosition">
+                <mat-datepicker-actions>
+                    <button mat-raised-button color="primary" matDatepickerApply>Izaberi</button>
+                    <button mat-raised-button color="warn" matDatepickerCancel>Otkazi</button>
+                </mat-datepicker-actions>
+            </mat-datepicker>
+            <button mat-raised-button color="primary" class="ms-2 h-100" [hidden]="!checkUserAdmin() || editMode" (click)="openEditMode()"><mat-icon>edit</mat-icon></button>
+            <button mat-raised-button color="primary" class="ms-2 h-100" [hidden]="!checkUserAdmin() || !editMode" (click)="openSalaDialog()"><mat-icon>add</mat-icon></button>
+        </div>
+    </div>
+
+    <div class="salaContainer mb-5" [hidden]="!sale">
+        <div class="sala" #salaMain (click)="deselect(salaMain)">
+            <div class="sto" #selectedSto cdkDrag [cdkDragDisabled]="!editMode" cdkDragBoundary=".sala" *ngFor="let sto of stoloviSale"
+                (mousedown)="selectObj(sto, selectedSto)"
+                (click)="openRezervacijaDialog(sto)" 
+                (dblclick)="izmeniObjekat(sto)"
+                [ngStyle]="{
+                    'width': getSirina(sto),
+                    'height': getDuzina(sto),
+                    'left': getPozicijaX(sto),
+                    'top': getPozicijaY(sto),
+                    'background': getDizajnStola(sto)
+                }"
+                (cdkDragEnded)="updateSto(sto, $event)"
+                >
+                <!-- <label disabled [ngStyle]="{'font-size': getFontSize(sto)}">{{sto.naziv}}</label> -->
+            </div>
+            <div class="predmet" #selectedPredmet cdkDrag [cdkDragDisabled]="!editMode" cdkDragBoundary=".sala" *ngFor="let predmet of predmetiSale"
+                style="color: white; background-color: #333333;"
+                (mousedown)="selectObj(predmet, selectedPredmet)"
+                (dblclick)="izmeniObjekat(predmet)"
+                [ngStyle]="{
+                    'width': getSirina(predmet),
+                    'height': getDuzina(predmet),
+                    'left': getPozicijaX(predmet),
+                    'top': getPozicijaY(predmet),
+                    'background': getDizajnObjektaSale()
+                }"
+                (cdkDragEnded)="updatePredmet(predmet, $event)"
+                >
+            </div>
+        </div>
+    </div>
+    <!-- <p style="text-align: center; font-size: 24px;" [hidden]="sale">Nema unetih sala!</p> -->
+    
+    <div [hidden]="!editMode">
+        <div class="kontrole p-3" [ngStyle]="{'display': vidljivo ? 'flex' : 'none'}">
+            <button mat-raised-button color="accent" [disabled]="selectedSalaIndex==-1" (click)="dodajObjekat()"><mat-icon>add</mat-icon></button>
+            <button mat-raised-button color="accent" [disabled]="selectedSalaIndex==-1" (click)="izmeniObjekat(clickedObj)"><mat-icon>edit</mat-icon></button>
+            <button mat-raised-button color="accent" [disabled]="selectedSalaIndex==-1" (click)="obrisiObjekat()"><mat-icon>delete</mat-icon></button>
+            <button mat-raised-button color="accent" [disabled]="selectedSalaIndex==-1" (click)="sacuvajSalu()"><mat-icon>save</mat-icon></button>
+            <button mat-raised-button color="warn" (click)="closeEditMode()" (window:keyup.esc)="onKeyEvent($event)"><mat-icon>cancel</mat-icon></button>
+        </div>
+    
+        <button mat-mini-fab color="primary" class="viewEditButton" (click)="toggleEditWindow()" [ngStyle]="{'left': vidljivo ? '82px' : '10px'}">
+            <mat-icon [ngStyle]="{'display': vidljivo ? 'block' : 'none'}">keyboard_arrow_left</mat-icon>
+            <mat-icon [ngStyle]="{'display': !vidljivo ? 'block' : 'none'}">keyboard_arrow_right</mat-icon>
+        </button>
+    
+        <button mat-mini-fab color="primary" class="viewEditButtonMobile" (click)="toggleEditWindow()" [ngStyle]="{'bottom': vidljivo ? '82px' : '10px'}">
+            <mat-icon [ngStyle]="{'display': vidljivo ? 'block' : 'none'}">keyboard_arrow_down</mat-icon>
+            <mat-icon [ngStyle]="{'display': !vidljivo ? 'block' : 'none'}">keyboard_arrow_up</mat-icon>
+        </button>
+    </div>
+
+    <div [hidden]="editMode">
+        <button mat-mini-fab id="prev" [disabled]="selectedSalaIndex<=0" (click)="promeniIndex(selectedSalaIndex-1)"><mat-icon>keyboard_arrow_left</mat-icon></button>
+        <button mat-mini-fab id="next" [disabled]="selectedSalaIndex>=sale.length-1 || sale.length==0" (click)="promeniIndex(selectedSalaIndex+1)"><mat-icon>keyboard_arrow_right</mat-icon></button>
+    </div>
+</div>
+
+
+<!-- <div class="example-boundary">
+    <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+        I can only be dragged within the dotted container
+    </div>
+</div> -->
+  
+
+<!-- <div class="salaContainer">
+    <div class="sala">
+        <div *ngFor="let sto of stoloviSale" class="sto" (click)="openRezervacijaDialog(sto)"
+            [ngStyle]="{
+                'width': getSirina(sto),
+                'height': getDuzina(sto),
+                'left': getPozicijaX(sto),
+                'top': getPozicijaY(sto),
+                'background': getDizajnStola(sto)
+            }">
+            <label [ngStyle]="{'font-size': getFontSize(sto)}">{{sto.naziv}}</label>
+        </div>
+    </div>
+</div> -->

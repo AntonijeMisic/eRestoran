@@ -1,0 +1,28 @@
+<div *ngIf="hrana">
+    <h2 mat-dialog-title>{{hrana.naziv}}</h2>
+    <mat-dialog-content class="mat-typography pb-0">
+    
+        <div class="row">
+            <div class="col-xl-1"></div>
+            <div class="col-lg">
+                <img class="mb-3" src="{{hrana.slika}}" />
+            </div>
+            <div class="col-lg">
+                <p>{{hrana.opis}}</p>
+                <hr>
+                <p>Količina: {{hrana.kolicina}}{{hrana.jedinicaMere}}</p>
+                <p>Cena: {{hrana.cena}}RSD</p>
+                <p><app-rating *ngIf="prosecnaOcena != -1" [hrana]="hrana"></app-rating></p>
+                <p><app-add-rating *ngIf="addOcena==true" [res]="res" [currUser]="currUser" [prosecnaOcenaHrane]="prosecnaOcena" [indikator]="addOcena" [hrana]="hrana"></app-add-rating></p>
+            </div>
+            <div class="col-xl-1"></div>
+        </div>
+    
+    </mat-dialog-content>
+    <mat-dialog-actions align="end" class="p-4">
+        
+        <button mat-raised-button color="primary" [hidden]="!currUser" (click)="openDajOcenuFormu()">Daj ocenu</button>
+        <!-- <button mat-raised-button color="warn" [hidden]="!currUser || !addOcena" (click)="closeDajOcenuFormu()">Zatvori</button> -->
+        <button mat-raised-button color="warn" [mat-dialog-close]="true">Izadji</button>
+    </mat-dialog-actions>
+</div>

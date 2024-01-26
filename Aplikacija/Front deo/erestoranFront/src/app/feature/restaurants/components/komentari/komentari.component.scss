@@ -1,0 +1,53 @@
+.interakcija
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.interakcija h1 {
+    font-size: 2rem;
+}
+
+.utisak
+{
+    padding: 1%;
+}
+
+.dugmici
+{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.utisakBtn button{
+    width: 100%;
+    min-width: 175px;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.editButtons {
+    overflow: hidden;
+}
+
+.editButtons button {
+    float: right;
+}
+
+@media screen and (max-width: 575px) {
+    .interakcija
+    {
+        flex-direction: column;
+    }
+    
+    .interakcija h1 {
+        text-align: center;
+    }
+
+    .utisakBtn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

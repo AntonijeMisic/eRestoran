@@ -1,0 +1,42 @@
+<!-- <mat-toolbar class="mat-elevation-z6">
+    <a href=""><span>eRestoran</span></a>
+    <div class="spacer"></div>
+    <a routerLink="" mat-button>Početna</a>
+    <a mat-button routerLink="/restorani">Restorani</a>
+    <a mat-raised-button *ngIf="!currentUser" color="accent" routerLink="/signup">Prijavi se</a>
+    <button mat-raised-button color="accent" *ngIf="currentUser" [matMenuTriggerFor]="menu">{{currentUser.ime}} {{currentUser.prezime}}</button>
+    <mat-menu #menu="matMenu" xPosition="before">
+        <button mat-menu-item (click)="gotoUserPage()">Profil</button>
+        <button mat-menu-item>Opcija</button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item (click)="logout()">Odjavi se</button>
+    </mat-menu>
+</mat-toolbar> -->
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">eRestoran</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a mat-button routerLink="" class="nav-link">Početna</a>
+                </li>
+                <li class="nav-item">
+                    <a mat-button routerLink="/restorani" class="nav-link" href="#">Restorani</a>
+                </li>
+                <li class="nav-item">
+                    <a mat-raised-button *ngIf="!currentUser" color="accent" routerLink="/signup">Prijavi se</a>
+                    <button mat-raised-button color="accent" *ngIf="currentUser" [matMenuTriggerFor]="menu">{{currentUser.ime}} {{currentUser.prezime}}</button>
+                    <mat-menu #menu="matMenu" xPosition="before">
+                        <button mat-menu-item (click)="gotoUserPage()">Profil</button>
+                        <mat-divider></mat-divider>
+                        <button mat-menu-item (click)="logout()">Odjavi se</button>
+                    </mat-menu>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,47 @@
+<div *ngIf="restoran">
+    <header class="masthead" [ngStyle]="{
+        'background': getPozadina(),
+        'background-size': 'cover',
+        'background-repeat': 'no-repeat',
+        'background-position': 'center',
+        'margin-top': '-52px',
+        'height': '100vh'
+    }">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <div class="podaci p-2 text-center shadow-1-strong text-white">
+                        <h1>{{restoran.naziv}}</h1>
+                        <h2>{{restoran.adresa}}</h2>
+                        <div class="d-flex">
+                            <button mat-raised-button color="primary" (click)="otvoriSalu()">Rezerviši svoje mesto</button>
+                            <button mat-raised-button color="primary" class="editDugme" [hidden]="!isCurUserAdmin()" (click)="izmeniRestoran()"><i class="fa fa-edit"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- <div class="carousel"></div> -->
+        <p class="mt-4">{{restoran.opis}}</p>
+        <div class="oceniRestoran">
+            <app-rating [res]="restoran"></app-rating>
+        </div>
+        <div>
+            <app-add-rating [res]="restoran" [currUser]="currentKorisnik"></app-add-rating>
+        </div>
+        <hr>
+        <div class="preporuceno">
+            <app-preporucena-jela [res]="restoran" [curUser]="currentKorisnik"></app-preporucena-jela>
+        </div>
+        <hr>
+        <div class="meni">
+            <app-meni [res]="restoran" [curUser]="currentKorisnik"></app-meni>
+        </div>
+        <hr>
+        <div class="komentari">
+            <app-komentari [res]="restoran" [curUser]="currentKorisnik"></app-komentari>
+        </div>
+    </div>
+</div>

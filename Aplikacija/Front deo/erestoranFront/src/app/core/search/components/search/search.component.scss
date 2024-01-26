@@ -1,0 +1,36 @@
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search input{
+    border-radius: 5rem 0 0 5rem;
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    background-color: #f1f1f1;
+    padding: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.search button{
+    color: grey;
+    height: 3rem;
+    width: 6rem;
+    font-size: 1rem;
+    border-radius: 0 10rem 10rem 0;
+    border: none;
+    background-color: #cf720e;
+    color: white;
+    outline: none;
+}
+
+.search button:hover{
+    background-color:  #ac6214;
+    cursor: pointer;
+}

@@ -1,0 +1,142 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '@angular/material/theming';
+@include mat-core();
+html, body { height: 100%; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background-color: #f1f1f1; }
+html{
+    font-size: 16px;
+}
+
+body
+{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+
+a.logo{
+    font-weight: bold;
+    padding: 1em;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li a{
+    padding: 1em;
+    display: inline-block;
+}
+
+$erestoran-primary: (
+    50 : #f9eee2,
+    100 : #f1d5b7,
+    200 : #e7b987,
+    300 : #dd9c56,
+    400 : #d68732,
+    500 : #cf720e, //default boja
+    600 : #ca6a0c,
+    700 : #c35f0a,
+    800 : #bd5508,
+    900 : #b24204,
+    A100 : #ffe6db,
+    A200 : #ffc2a8,
+    A400 : #ff9e75,
+    A700 : #ff8c5c,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$erestoran-accent: (
+    50 : #f6ede3,
+    100 : #ead2b8,
+    200 : #dcb489,
+    300 : #cd955a,
+    400 : #c37f36,
+    500 : #b86813,
+    600 : #b16011,
+    700 : #a8550e,
+    800 : #a04b0b,
+    900 : #913a06,
+    A100 : #ffd2be,
+    A200 : #ffaf8b,
+    A400 : #ff8c58,
+    A700 : #ff7a3e,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$erestoran-warn: (
+    50 : #f7e0e0,
+    100 : #ebb3b3,
+    200 : #dd8080,
+    300 : #cf4d4d,
+    400 : #c52626,
+    500 : #bb0000,
+    600 : #b50000,
+    700 : #ac0000,
+    800 : #a40000,
+    900 : #960000,
+    A100 : #ffc1c1,
+    A200 : #ff8e8e,
+    A400 : #ff5b5b,
+    A700 : #ff4141,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$erestoran-palette-primary: mat-palette($erestoran-primary);
+$erestoran-palette-accent: mat-palette($erestoran-accent);
+$erestoran-palette-warn: mat-palette($erestoran-warn);
+
+$erestoran-theme: mat-light-theme($erestoran-palette-primary, $erestoran-palette-accent, $erestoran-palette-warn);
+
+@include angular-material-theme($erestoran-theme);

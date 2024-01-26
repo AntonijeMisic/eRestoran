@@ -1,0 +1,33 @@
+mat-dialog-content {
+    padding-bottom: 0;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    mat-dialog-content {
+        min-width: 500px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    mat-dialog-content {
+        min-width: 400px;
+    }
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 0px;
+}

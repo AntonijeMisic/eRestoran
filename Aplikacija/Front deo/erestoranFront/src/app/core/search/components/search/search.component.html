@@ -1,0 +1,7 @@
+<div class="search">
+    <input type="text" placeholder="Pretraži restorane" [(ngModel)]="searchTerm" (change)="search()">
+    <!--Ovo je two way binding tako da mozemo da menjamo vrednost i s desna na levo i s leva na desno-->
+    <!--Postoji i one way bindig koji se deli na property binding tako sto vezujemo neku promenljivu za taj element []-->
+    <!--Postoji i view ili event binding () tako da neke eventove povezujemo sa funkcijama koje izvrsavaju recimo (click)-->
+    <button (click)="search()">Pretraga!</button>
+</div>

@@ -1,0 +1,51 @@
+<section *ngIf="currentUser">
+  <div class="mask">
+    <div class="container mt-5">
+      <div class="row d-flex justify-content-center mb-5">
+        <div class="col-md-9 col-lg-8 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-4">
+              <div class="profil" *ngIf="!editMode">
+                <h2 class="text-uppercase">{{currentUser.ime}} {{currentUser.prezime}}</h2>
+                <h3>{{currentUser.username}}</h3>
+                <div class="info">
+                  <p>Email: {{currentUser.email}}</p>
+                  <p>Telefon: {{currentUser.telefon}}</p>
+                </div>
+
+                <button mat-raised-button color="primary" (click)="changeMode()">Izmeni podatke</button>
+              </div>
+
+              <div class="editProfil" *ngIf="editMode">
+                <h1 class="text-center">Izmeni podatke</h1>
+                <div class="ime-i-prezime">
+                  <div class="imeInput">
+                    <p>Ime:</p>
+                    <input class="form-control" id="ime" type="text" placeholder="Ime" value="{{currentUser.ime}}"/>
+                  </div>
+                  <div class="prezimeInput">
+                    <p>Prezime:</p>
+                    <input class="form-control" id="prezime" type="text" placeholder="Prezime" value="{{currentUser.prezime}}"/>
+                  </div>
+                </div>
+                <p>Username:</p>
+                <input class="form-control" id="username" type="text" placeholder="Username" value="{{currentUser.username}}"/>
+                <p>Email:</p>
+                <input class="form-control" id="email" type="email" placeholder="Email" value="{{currentUser.email}}"/>
+                <p>Telefon:</p>
+                <input class="form-control" id="telefon" type="text" placeholder="Telefon" value="{{currentUser.telefon}}"/>
+                <p>Nova lozinka:</p>
+                <input class="form-control" id="newPassword" type="password" placeholder="Nova lozinka"/>
+
+                <div class="editDugmici mt-3">
+                  <button mat-raised-button color="primary" (click)="sacuvajIzmene()">Sačuvaj podatke</button>
+                  <button mat-raised-button color="warn" (click)="closeEditMode()">Otkaži</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+<h2 mat-dialog-title><span *ngIf="tip=='Dodaj'">Dodaj stavku u meni</span><span *ngIf="tip=='Izmeni'">Izmeni stavku iz menija</span></h2>
+<mat-dialog-content class="mat-typography pb-0">
+
+    <div class="container">
+        <p>Naziv:</p>
+        <input id="nazivInput" (input)="checkInputFields()" class="form-control" type="text" cdkFocusInitials #naziv placeholder="Naziv">
+        <p>Opis:</p>
+        <textarea id="textAreaInput" (ngModelChange)="checkInputFields()" class="form-control" #opis [maxLength]="1000" rows="5" placeholder="Opis" ></textarea>
+        <p>Količina:</p>
+        <input id="kolicinaInput" (input)="checkInputFields()" class="form-control" type="number" #kolicina placeholder="Količina" min="1">
+        <p>Jedinica mere:</p>
+        <input id="jedinicaInput" (input)="checkInputFields()"s class="form-control" type="text" #mera placeholder="Jedinica mere">
+        <p>Cena:</p>
+        <input id="cenaInput" (input)="checkInputFields()" class="form-control" type="number" #cena placeholder="Cena" min="0">
+        <!--Dodaj input za sliku-->
+        <div class="mb-3">
+            <p for="formFile" class="form-label">Izaberi sliku:</p>
+            <input class="form-control" type="file" id="formFile" (change)="handleFileInput($event)">
+        </div>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="p-4">
+    <button *ngIf="tip=='Izmeni'" [disabled]="!btnEnabled" mat-raised-button class="mt-2" color="primary" (click)="izmeni(naziv.value, opis.value, kolicina.valueAsNumber, cena.valueAsNumber, mera.value)" [mat-dialog-close]="true" >
+        <span>Izmeni</span>
+    </button>
+    <button *ngIf="tip=='Dodaj'" [disabled]="!btnEnabled" mat-raised-button class="mt-2" color="primary" (click)="dodaj(naziv.value, opis.value, kolicina.valueAsNumber, cena.valueAsNumber, mera.value)" [mat-dialog-close]="true" >
+        <span>Dodaj</span>
+    </button>
+    <button mat-raised-button class="mt-2" color="warn" [mat-dialog-close]="false">Otkaži</button>
+</mat-dialog-actions>

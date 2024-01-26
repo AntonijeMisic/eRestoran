@@ -1,0 +1,45 @@
+.content
+{
+    padding: 1%;
+}
+
+.d-flex {
+    justify-content: center
+}
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .d-flex button {
+        font-size: 150%;
+        height: 60px;
+    }
+    
+    .editDugme {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+    
+    .d-flex button {
+        font-size: 125%;
+        height: 48px;
+    }
+
+    .editDugme {
+        margin-top: 0.5rem;
+        margin-left: 0!important;
+    }
+}

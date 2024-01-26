@@ -1,0 +1,157 @@
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\appsettings.json
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\ERestoran.exe
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\ERestoran.deps.json
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\ERestoran.runtimeconfig.json
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\ERestoran.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\ERestoran.pdb
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.csproj.AssemblyReference.cache
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.AssemblyInfoInputs.cache
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.AssemblyInfo.cs
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.csproj.CoreCompileInputs.cache
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\staticwebassets\msbuild.ERestoran.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\staticwebassets\msbuild.build.ERestoran.props
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ERestoran.props
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ERestoran.props
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\scopedcss\bundle\ERestoran.styles.css
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.csproj.CopyComplete
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\refint\ERestoran.dll
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.pdb
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ERestoran.genruntimeconfig.cache
+C:\Users\Aleksa\Desktop\PROJEKAT\obj\Debug\net7.0\ref\ERestoran.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\appsettings.Development.json
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\appsettings.json
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\ERestoran.exe
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\ERestoran.deps.json
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\ERestoran.runtimeconfig.json
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\ERestoran.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\ERestoran.pdb
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Azure.Core.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Azure.Identity.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Castle.Core.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Humanizer.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Proxies.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\System.CodeDom.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\System.Memory.Data.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.csproj.AssemblyReference.cache
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.GeneratedMSBuildEditorConfig.editorconfig
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.AssemblyInfoInputs.cache
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.AssemblyInfo.cs
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.csproj.CoreCompileInputs.cache
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.MvcApplicationPartsAssemblyInfo.cs
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.MvcApplicationPartsAssemblyInfo.cache
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\staticwebassets\msbuild.ERestoran.Microsoft.AspNetCore.StaticWebAssets.props
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\staticwebassets\msbuild.build.ERestoran.props
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ERestoran.props
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ERestoran.props
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\staticwebassets.pack.json
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\staticwebassets.build.json
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\staticwebassets.development.json
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\scopedcss\bundle\ERestoran.styles.css
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.csproj.CopyComplete
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\refint\ERestoran.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.pdb
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ERestoran.genruntimeconfig.cache
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\obj\Debug\net7.0\ref\ERestoran.dll
+E:\AleksaPR0\Skola\Fakultet\III godina\VI semestar\Softversko inzenjerstvo\Projekat\Aplikacija\ERestoran\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

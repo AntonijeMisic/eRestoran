@@ -1,0 +1,40 @@
+<div class="preporuceno" *ngIf="preporucenaJela.length > 0">
+    <h1 class="my-5">Iz ponude izdvajamo:</h1>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let jelo of preporucenaJela">
+                <div class="container" (click)="openInfoDialog(jelo)">
+                    <div class="slikaWrap">
+                        <div class="slika">
+                            <img src="{{jelo.slika}}" alt="{{jelo.slika}}" style="filter: brightness(80%)"/>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="name">{{jelo.naziv}}</h2>
+                        <hr>
+                        <div class="info">
+                            <p class="me-1">Količina: {{jelo.kolicina}}{{jelo.jedinicaMere}}</p>
+                            <p class="ms-1" style="text-align: right;">Cena: {{jelo.cena}}RSD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <ul>
+        <li *ngFor="let jelo of preporucenaJela">
+            <a>
+                <div class="content">
+                    <div class="name"><h1>{{jelo.naziv}}</h1></div>
+                    <hr>
+                    <div class="info">
+                        <div class="opis">{{jelo.opis}}</div>
+                        <div class="cena">{{jelo.cena}}din</div>
+                    </div>
+                </div>
+            </a>        
+        </li>
+    </ul>     -->
+</div>

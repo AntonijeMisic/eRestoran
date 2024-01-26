@@ -1,0 +1,28 @@
+<h2 mat-dialog-title>Rezerviši sto</h2>
+<mat-dialog-content class="mat-typography pb-0">
+
+    <div class="container">
+        <p>Sto je <span [hidden]="checkRezervisano()">slobodan</span><span [hidden]="!checkRezervisano()">rezervisan</span>!</p>
+        <p>Broj mesta: {{sto.brojMesta}}</p>
+        <div [hidden]="(!checkRezervisano() || !checkUserAdmin()) && !checkRezervacijaOwner()">
+            <p class="mb-0">
+                Sto je rezervisao korisnik {{rezervacija?.korisnik!.ime}} {{rezervacija?.korisnik!.prezime}} za {{rezervacija?.brojLjudi}} osobe<br/>
+                E-mail: {{rezervacija?.korisnik!.email}}<br/>
+                Broj telefona: {{rezervacija?.korisnik!.telefon}}
+            </p>
+            <mat-dialog-actions align="end" class="p-0">
+                <button mat-raised-button color="warn" [mat-dialog-close]="true" (click)="otkazi()">Otkaži rezervaciju</button>
+            </mat-dialog-actions>
+        </div>
+        <div class="brojMestaInput" [hidden]="checkRezervisano() || !checkLogIn()">
+            <p>Broj osoba:</p>
+            <input class="form-control" id="brojLjudi" type="number" min="2" max="{{sto.brojMesta}}" placeholder="Broj osoba"/>
+        </div>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="p-4">
+    <button mat-raised-button class="mt-2" color="primary" [disabled]="checkRezervisano() || !checkLogIn()" [mat-dialog-close]="true" (click)="rezervisi()">Rezerviši</button>
+    <button mat-raised-button class="mt-2" color="warn" [mat-dialog-close]="false" cdkFocusInitial>Otkaži</button>
+</mat-dialog-actions>

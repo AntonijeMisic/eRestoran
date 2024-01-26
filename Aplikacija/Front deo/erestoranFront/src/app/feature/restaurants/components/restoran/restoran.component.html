@@ -1,0 +1,36 @@
+<div class="restorani"> <!--Moze da se dodaju neki kao parametri za pretragu-->
+    <h1 class="my-5">Restorani</h1>
+
+    <div *ngIf="restorani" class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let restoran of restorani">
+                <div class="container">
+                    <a routerLink="/restorani/{{restoran.id}}">
+                        <div class="slikaWrap">
+                            <div class="slika">
+                                <img src="{{restoran.slika}}" alt="" style="filter: brightness(80%)"/>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h2 class="name">{{restoran.naziv}}</h2>
+                            <hr>
+                            <div class="meni" *ngFor="let jelo of restoran.meni.slice(0,3)">
+                                <p class="me-1">{{jelo.naziv}}</p>
+                                <p class="ms-1" style="text-align: right;">{{jelo.cena}}RSD</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dugmici pt-0" [hidden]="!checkUserAdmin()">
+                        <button mat-raised-button class="me-1" color="primary" (click)="izmeniRestoran(restoran)" ><i class="fa fa-edit"></i></button>
+                        <button mat-raised-button class="ms-1" color="warn" (click)="obrisiRestoran(restoran)" ><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="noviRestoran">
+        <button class="mt-5 mb-5" [hidden]="!checkUserAdmin()" mat-raised-button color="primary" (click)="dodajRestoran()">Dodaj novi restoran</button>
+    </div>
+    
+</div>

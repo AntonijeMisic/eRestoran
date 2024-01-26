@@ -1,0 +1,42 @@
+<section>
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card mb-5" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Prijavite se na Vaš nalog</h2>
+
+              <form [formGroup]="loginForm">
+
+                <div class="form-outline mb-4">
+                  <div class="input-field" >
+                    <input type="text" [class.error]="loginForm.controls['username'].dirty && loginForm.hasError('required', 'username')" id="form3Example1cg" formControlName="username" class="form-control form-control-lg" name="username" placeholder="Username" [(ngModel)]="username" />
+                    <small class="text-danger" *ngIf="loginForm.controls['username'].dirty && loginForm.hasError('required', 'username')">*Username je obavezno polje</small>
+                  </div>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <div class="input-field"  >
+                    <input type="password" id="form3Example4cg" [class.error]="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')" formControlName="password"  class="form-control form-control-lg" name="password" placeholder="Password" [(ngModel)]="password"/>
+                    <small class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')">*Password je obavezno polje</small>
+                  </div> 
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="button"
+                    class="btn btn-block btn-lg gradient-custom-4"  (click)="onLogin()">Prijavite se</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Nemate nalog? <a href="#!" routerLink="/register"
+                    class="fw-bold text-body"><u>Napravite svoj ovde</u></a></p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

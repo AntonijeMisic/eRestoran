@@ -1,0 +1,39 @@
+mat-dialog-content {
+    padding-bottom: 0;
+    overflow-x: hidden;
+    min-height: 95px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    mat-dialog-content {
+        min-width: 500px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    mat-dialog-content {
+        min-width: 400px;
+    }
+}
+
+.opcije button {
+    display: block;
+    width: 100%;
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 0px;
+}

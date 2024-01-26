@@ -1,0 +1,12 @@
+<div class="zvezdice" *ngIf="addOcena===true || indikator===true">
+    <mat-icon *ngFor="let icon of maxRatingArr; let index=index" 
+    (mouseenter)="HandleMouseEnter(index)"
+    (mouseleave)="HandleMouseLeave()"
+    (click)="Rating(index)"
+    [ngClass]="{checked: selectedStar>index }"
+    >
+    star
+    </mat-icon>
+</div>
+<button *ngIf="btnPrikaz==true" mat-raised-button color="primary" [hidden]="!currUser"(click)="openDajOcenuFormu()">Daj svoju ocenu</button>
+<button class="mx-2" mat-raised-button color="warn" *ngIf="addOcena===true" [hidden]="!currUser"(click)="closeDajOcenuFormu()"  >Zatvori</button>

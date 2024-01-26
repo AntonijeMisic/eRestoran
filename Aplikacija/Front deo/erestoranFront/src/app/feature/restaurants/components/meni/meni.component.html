@@ -1,0 +1,50 @@
+<h1 class="my-5">Meni restorana:</h1>
+<div *ngIf="jela.length > 0" class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="d-none d-md-table-cell">Proizvod</th>
+                <th class="d-none d-md-table-cell">Količina</th>
+                <th class="d-none d-md-table-cell">Cena</th>
+                <th class="d-none d-md-table-cell">Opcije</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let jelo of jela">
+                <td>
+                    <div class="menuItem">
+                        <div class="slikaWrap">
+                            <div class="slika">
+                                <img src="{{jelo.slika}}" alt="{{jelo.slika}}" style="filter: brightness(80%)"/>
+                            </div>
+                        </div>
+                        <h2 class="my-1">{{jelo.naziv}}</h2>
+                        <p class="my-1 d-md-none">Količina: {{jelo.kolicina}}{{jelo.jedinicaMere}}</p>
+                        <p class="my-1 d-md-none">Cena: {{jelo.cena}}RSD</p>
+                        <button class="my-2 d-md-none" width="100%" mat-raised-button color="primary" (click)="openInfoDialog(jelo)">Više informacija</button>
+                        <button class="my-2 d-md-none" width="100%" mat-raised-button color="primary" (click)="openKomentariDialog(jelo)">Komentari</button>
+                        <div class="dugmici d-md-none" width="100%" [hidden]="!checkUserAdmin()">
+                            <button mat-raised-button class="me-1" color="primary" (click)="izmeniJelo(jelo)"><i class="fa fa-edit"></i></button>
+                            <button mat-raised-button class="ms-1" color="warn" (click)="obrisiJelo(jelo)"><i class="fa fa-trash"></i></button>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-md-table-cell">{{jelo.kolicina}}{{jelo.jedinicaMere}}</td>
+                <td class="d-none d-md-table-cell">{{jelo.cena}}RSD</td>
+                <td class="d-none d-md-table-cell">
+                    <button class="my-2" width="100%" mat-raised-button color="primary" (click)="openInfoDialog(jelo)">Više informacija</button>
+                    <button class="my-2" width="100%" mat-raised-button color="primary" (click)="openKomentariDialog(jelo)">Komentari</button>
+                    <div class="dugmici" width="100%" [hidden]="!checkUserAdmin()">
+                        <button mat-raised-button class="me-1" color="primary" (click)="izmeniJelo(jelo)"><i class="fa fa-edit"></i></button>
+                        <button mat-raised-button class="ms-1" color="warn" (click)="obrisiJelo(jelo)"><i class="fa fa-trash"></i></button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p *ngIf="jela.length == 0">Meni je prazan!</p>
+<div class="my-5" [hidden]="!checkUserAdmin()">
+    <button mat-raised-button color="primary" (click)="DodajJelo()">Dodaj novu stavku u meni</button>
+</div>
+

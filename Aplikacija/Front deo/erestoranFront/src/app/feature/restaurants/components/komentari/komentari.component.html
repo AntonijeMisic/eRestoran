@@ -1,0 +1,33 @@
+<div class="section">
+    <div class="interakcija">
+        <h1>Utisci zadovoljnih mušterija:</h1>
+        <button class="utisakBtn mb-3" (click)="AddComment()" mat-raised-button color="primary" [disabled]="!curUser">Ostavi svoj utisak</button>
+    </div>
+    <div class="utisak" *ngIf="clicked===true">
+        <div class="form-group">
+            <label for="comment">Komentar:</label>
+            <textarea class="form-control" (input)="checkTextbox(comment.value)" [maxLength]="1000" rows="5" placeholder="Unesite Vaš komentar ovde..." #comment ></textarea>
+        </div>
+        <div class="dugmici">
+            <button class="mt-2 me-2" (click)="SaveComment(comment.value)" mat-raised-button color="primary" [disabled]="!btnEnabled">Dodaj Komentar</button>
+            <button class="mt-2" (click)="CancelComment()" mat-raised-button color="warn">Otkaži</button>
+        </div>
+        <hr>
+    </div>
+    
+    <div class="komentar">
+        <div *ngIf="komentari.length != 0">
+            <div *ngFor="let komentar of komentari">
+                <div class="ime">{{komentar.korisnik.ime}} {{komentar.korisnik.prezime}}</div>
+                <div class="tekst">{{komentar.tekst}}</div>
+                <p class="m-0" data-toggle="tooltip" data-placement="top" style="text-align: right;" title="{{komentar.vremePostavljanja | date: 'd.M.yyyy. HH:mm:ss'}}">{{prikaziVreme(komentar.vremePostavljanja)}}</p>
+                <div class="dugmici" [hidden]="!checkUserAdmin() && !checkCommentOwner(komentar)" align="end" class="p-0">
+                    <button mat-raised-button class="mt-2" color="primary" [disabled]="!checkLogIn()" (click)="openEditKomentarDialog(komentar)"><i class="fa fa-edit"></i></button>
+                    <button mat-raised-button class="mt-2 ms-2" color="warn" [disabled]="!checkLogIn()" (click)="openDeleteKomentarDialog(komentar)"><i class="fa fa-trash"></i></button>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <p *ngIf="komentari.length == 0">Nema komentara!</p>
+    </div>
+</div>

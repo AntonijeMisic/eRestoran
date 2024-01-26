@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>Dodaj salu</h2>
+<mat-dialog-content class="mat-typography pb-0">
+
+    <div class="container">
+        <p>Širina (u metrima):</p>
+        <input class="form-control" id="sirina" type="number" min="5" max="25" placeholder="Širina"/>
+        <p>Dužina (u metrima):</p>
+        <input class="form-control" id="duzina" type="number" min="5" max="25" placeholder="Dužina"/>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="p-4">
+    <button mat-raised-button class="mt-2" color="primary" [mat-dialog-close]="true" (click)="dodajSalu()">Dodaj</button>
+    <button mat-raised-button class="mt-2" color="warn" [mat-dialog-close]="false">Otkaži</button>
+</mat-dialog-actions>
